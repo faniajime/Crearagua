@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		41297C252336786700D7CF1A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41297C242336786700D7CF1A /* main.cpp */; };
 		41297C2D2336799200D7CF1A /* libomp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 41297C2C2336799200D7CF1A /* libomp.dylib */; };
+		412C7A032336C0F2001B458D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 412C79FE2336C0F2001B458D /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,9 +28,11 @@
 		41297C212336786700D7CF1A /* Crearagua */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Crearagua; sourceTree = BUILT_PRODUCTS_DIR; };
 		41297C242336786700D7CF1A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		41297C2C2336799200D7CF1A /* libomp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libomp.dylib; path = ../../../../usr/local/Cellar/llvm/8.0.1/lib/libomp.dylib; sourceTree = "<group>"; };
-		41297C2E23367B9700D7CF1A /* Barrera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Barrera.h; sourceTree = "<group>"; };
-		41297C2F23367BA700D7CF1A /* Atomo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Atomo.h; sourceTree = "<group>"; };
-		41297C3023367BB100D7CF1A /* Master.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Master.h; sourceTree = "<group>"; };
+		412C79FE2336C0F2001B458D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../Downloads/Agua/Agua/main.cpp; sourceTree = "<group>"; };
+		412C79FF2336C0F2001B458D /* molecula.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = molecula.h; path = ../../../Downloads/Agua/Agua/molecula.h; sourceTree = "<group>"; };
+		412C7A002336C0F2001B458D /* barrera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = barrera.h; path = ../../../Downloads/Agua/Agua/barrera.h; sourceTree = "<group>"; };
+		412C7A012336C0F2001B458D /* Aleatorizador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Aleatorizador.h; path = ../../../Downloads/Agua/Agua/Aleatorizador.h; sourceTree = "<group>"; };
+		412C7A022336C0F2001B458D /* moleculeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = moleculeManager.h; path = ../../../Downloads/Agua/Agua/moleculeManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +67,12 @@
 		41297C232336786700D7CF1A /* Crearagua */ = {
 			isa = PBXGroup;
 			children = (
+				412C7A012336C0F2001B458D /* Aleatorizador.h */,
+				412C7A002336C0F2001B458D /* barrera.h */,
 				41297C242336786700D7CF1A /* main.cpp */,
-				41297C2E23367B9700D7CF1A /* Barrera.h */,
-				41297C2F23367BA700D7CF1A /* Atomo.h */,
-				41297C3023367BB100D7CF1A /* Master.h */,
+				412C79FE2336C0F2001B458D /* main.cpp */,
+				412C79FF2336C0F2001B458D /* molecula.h */,
+				412C7A022336C0F2001B458D /* moleculeManager.h */,
 			);
 			path = Crearagua;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412C7A032336C0F2001B458D /* main.cpp in Sources */,
 				41297C252336786700D7CF1A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

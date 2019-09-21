@@ -5,7 +5,7 @@
 //  Created by Fabiola on 9/21/19.
 //  Copyright © 2019 Fabiola Jimenez. All rights reserved.
 #include <iostream>
-#include <libiomp/omp.h>
+#include <omp.h>
 
 int main(int argc, const char * argv[]) {
 #pragma omp parallel
