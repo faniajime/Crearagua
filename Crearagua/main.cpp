@@ -1,15 +1,38 @@
-//
-//  main.cpp
-//  Crearagua
-//
-//  Created by Fabiola on 9/21/19.
-//  Copyright Â© 2019 Fabiola Jimenez. All rights reserved.
 #include <iostream>
-#include <omp.h>
+#include <string>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-#pragma omp parallel
-#pragma omp critical
-    std::cout << "Greetings from thread "<<omp_get_thread_num()<<std::endl;
-    return 0;
+#include "moleculeManager.h"
+#include "Aleatorizador.h"
+
+/*
+#include "Aleatorizador.h"
+*/
+
+
+
+int main()
+{
+
+	// Hidrogenos y oxigenos con los que se inicia
+	int Hs;
+	int Os;
+
+	// La cantidad de moléculas de agua se maneja en el main
+	int aguas = 0;
+
+	// El usuario define la cantidad de Hs y Os
+	cout << "Digite la cantidad de hidrogenos en el sistema: "; cin >> Hs;
+	cout << "Digite la cantidad de oxigenos en el sistema: "; cin >> Os;
+
+	moleculeManager manager(Hs, Os);
+
+	Aleatorizador::inicializar_generador_random();
+
+}
+
+
+
+void takeToBarrier(moleculeManager manager, barrera barrera) {
+	manager
 }
